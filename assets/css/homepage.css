@@ -1,0 +1,1170 @@
+/* 中文字體 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200&display=swap');
+/* 原本的英文字體Montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
+
+* {
+    margin: 0%;
+    /* 英文字體 */
+    /* font-family: 'EB Garamond', 'Noto Serif TC', serif; */
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* 導覽列 */
+#nav {
+    /* border: 2px solid palevioletred; */
+    width: 100%;
+    height: 100px;
+    display: flex;
+
+    z-index: 1000;
+    /* 調整透明度 */
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+    position: fixed;
+    color: white;
+    /* 調整透明度 */
+    /* opacity: 0.9; */
+    /* transition: top 0.5s ease; */
+    /* transition: 0.4s;
+    opacity: 0; */
+    font-family: 'EB Garamond', 'Noto Serif TC', serif;
+
+}
+
+
+
+
+/* 旁邊的logo */
+.logo {
+    /* border: 2px solid greenyellow; */
+    height: 100%;
+    width: 25%;
+    /* padding: 10px; */
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 5px;
+    line-height: 5px;
+
+
+
+}
+
+.wrap-logo {
+    display: flex;
+    /* border: 2px solid royalblue; */
+    position: relative;
+    align-items: center;
+    margin: 2%;
+    height: 90px;
+}
+
+.wrap-logo>a img {
+    position: relative;
+}
+
+.logo-title {
+    /* border: 2px solid rebeccapurple; */
+    position: relative;
+    margin-left: 2px;
+    line-height: 25px;
+}
+
+.logo a>img {
+    display: block;
+    margin: auto;
+    padding: 2px;
+    height: 64px;
+    width: 64px;
+    /* border: 2px solid black; */
+}
+
+.homepage-logo {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 登入+註冊 */
+/* #login_form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid blue;
+    margin: 0;
+    padding: 0;
+}
+
+.con {
+    width: 660px;
+    height: 415px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px;
+    position: relative;
+    background-color: aliceblue;
+}
+
+.form-box {
+    position: absolute;
+    top: -7%;
+    left: 3%;
+    width: 325px;
+    height: 480px;
+    border-radius: 10px;
+    box-shadow: 2px 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transform: 0.5s ease-in-out;
+    background-color: hotpink;
+}
+
+.register-box,
+.login-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+    transition: 0.5s;
+}
+
+.l_r-title h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: aliceblue;
+    position: absolute;
+}
+
+.con input {
+    background-color: transparent;
+    width: 70%;
+    color: aliceblue;
+    border: none;
+    border-bottom: 1px solid;
+    padding: 10px 0;
+    text-indent: 10px;
+    margin: 8px 0;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.con input::placeholder {
+    color: aliceblue;
+}
+
+.con input:focus {
+    color: darkmagenta;
+    outline: none;
+    border-bottom: 1px solid #a2a2a2;
+    transition: 0.5s;
+}
+
+.con input:focus::placeholder {
+    opacity: 0;
+}
+
+.form-box button {
+    width: 70%;
+    margin-top: 35px;
+    background-color: aliceblue;
+    outline: none;
+    border-radius: 10px;
+    padding: 13px;
+    color: deeppink;
+    letter-spacing: 2px;
+    border: none;
+    cursor: pointer;
+}
+
+.form-box button:hover {
+    background-color: deeppink;
+    color: aliceblue;
+    transition: background-color 0.5s ease;
+}
+
+.con-box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.con-box.left {
+    left: -2%;
+}
+
+.con-box.right {
+    right: -2%;
+}
+
+.con-box h3 {
+    color: #a2a2a2;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.con-box p {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #a2a2a2;
+    text-align: center;
+}
+
+.con-box button {
+    margin-top: 3%;
+    background-color: aliceblue;
+    color: deeppink;
+    border: 1px solid #a2a2a2;
+    padding: 6px 10px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    outline: none;
+    cursor: pointer;
+}
+
+.con-box button:hover {
+    background-color: #a2a2a2;
+    color: aliceblue;
+} */
+
+/* 旁邊的logo結束 */
+
+/* 下拉式選單 */
+.nav-title {
+
+    position: relative;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* margin-top: 1%; */
+    height: 100%;
+    width: 50%;
+    float: left;
+    /* border: 2px solid darkcyan; */
+    text-align: center;
+}
+
+.name {
+    position: relative;
+    /* left: 20%; */
+}
+
+.nav-name>li {
+    float: left;
+}
+
+.nav-title li {
+    list-style: none;
+    position: relative;
+
+}
+
+.name {
+    width: 20%;
+}
+
+.nav-title ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+}
+
+/* name漂浮改變顏色 */
+.nav-name>li>a:hover {
+    color: #C0A06A;
+}
+
+.subname li a {
+    background-color: rgba(0, 0, 0, 0.6);
+    /* subname的標題 */
+    border: 0.1px solid gray;
+    line-height: 70px;
+}
+
+.subname li a:hover {
+    background-color: rgb(172, 172, 172);
+}
+
+.nav-name a {
+    text-decoration: none;
+    color: inherit;
+    /* background-color: blue; */
+    /* width: 300px; */
+    /* border: 2px solid rgb(123, 47, 47); */
+    display: block;
+    line-height: 100px;
+
+}
+
+.nav-name ul {
+    display: none;
+    /* subname總框架 */
+
+
+
+}
+
+.nav-name .name:hover ul {
+    display: block;
+
+}
+
+/* 下拉式選單結束 */
+/* 導覽列右側 */
+.right-icon {
+    /* container包住items，items有彈性 */
+    display: flex;
+    /* 水平置中 */
+    justify-content: center;
+    /* 垂直置中 */
+    align-items: center;
+    /* border: 2px solid chocolate; */
+    margin-left: 4%;
+    width: 20%;
+}
+
+.right-icon img {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    /* border: 2px solid chartreuse; */
+
+}
+
+.search {
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+}
+
+.search input#search {
+    width: 10px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.01);
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #262626;
+    padding-left: 0px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #fff;
+    -webkit-transition: width .55s ease;
+    -moz-transition: width .55s ease;
+    -ms-transition: width .55s ease;
+    -o-transition: width .55s ease;
+    transition: width .55s ease;
+}
+
+.search input#search::-webkit-input-placeholder {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.search.icon {
+    position: absolute;
+    top: 50%;
+    margin-left: 0px;
+    margin-top: 17px;
+    z-index: 1;
+    color: #4f5b66;
+}
+
+.search input#search:focus,
+.search input#search:active {
+    outline: none;
+    width: 150px;
+}
+
+.search:hover input#search {
+    width: 150px;
+}
+
+.search:hover .icon {
+    color: #93a2ad;
+}
+
+/* 導覽列結束 */
+/* 滾動條*/
+/* 滾動條的寬度 */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* 滾動條和視窗上下間距的樣式 */
+::-webkit-scrollbar-button {
+    /* background: transparent; */
+    background: rgb(40, 39, 39);
+    height: 20px;
+    display: none;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background: rgb(40, 39, 39);
+
+}
+
+/* 滑塊的樣式 */
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgb(83, 83, 83);
+    /* border: 1px solid slategrey; */
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: transparent;
+}
+
+/* 滾動條結束*/
+
+
+/* body {
+    width: 100%;
+    border: 2px solid blue;
+    margin: 0%;
+    background-color: rgb(36, 35, 35);
+    color: white;
+
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 0;
+} */
+
+/* 輪播圖 */
+.container {
+    width: 100%;
+    /* background-color: rgb(218, 35, 35); */
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid yellow; */
+}
+
+/* body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(170, 190, 250);
+} */
+
+.shell {
+    width: 100%;
+    height: 680px;
+    position: relative;
+    overflow-x: hidden;
+    /* border-radius: 5px; */
+    /* border: #f00 2px solid; */
+}
+
+.images {
+    width: 300%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: .2s;
+}
+
+.img {
+    width: 100%;
+    background-size: cover;
+}
+
+.img:nth-child(1) {
+    background-image: url(../images/e.jpg);
+
+}
+
+.img:nth-child(2) {
+    background-image: url(../images/b.jpg);
+}
+
+.img:nth-child(3) {
+    background-image: url(../images/j.jpg);
+}
+
+.min-images {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    left: 47%;
+    bottom: 20px;
+    width: 6%;
+    z-index: 999;
+    /* right: 10%; */
+    /* justify-content: center; */
+    align-items: center;
+    /* border: 2px solid yellow; */
+}
+
+.min {
+    width: 10px;
+    height: 10px;
+    /*鼠標懸浮時顯示按鈕指針*/
+    cursor: pointer;
+    border-radius: 50%;
+    background-size: cover;
+    border: solid 5px rgba(255, 255, 255, 0.5);
+    /*照片偏移量*/
+    background-position: -20px 0;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+    border: none;
+}
+
+/* .min:nth-child(1) {
+    background-image: url(photo/a.png);
+}
+
+.min:nth-child(2) {
+    background-image: url(photo/b.png);
+}
+
+.min:nth-child(3) {
+    background-image: url(photo/c.png);
+} */
+/* 輪播圖結束 */
+
+/* slogan */
+.quotes {
+    width: 100%;
+    height: 830px;
+    /* border: 2px rgb(0, 30, 255) solid; */
+    background-color: #000;
+    display: flex;
+    position: relative;
+}
+
+.quote1 {
+    height: 70%;
+    width: 40%;
+    position: absolute;
+    margin-top: 7%;
+    z-index: 1;
+    /* border: 2px rgb(0, 162, 255) solid; */
+}
+
+.quotepic1 {
+    width: 100%;
+}
+
+.quote2 {
+    height: 60%;
+    width: 40%;
+    position: absolute;
+    /* margin-top: 7%; */
+    left: 20%;
+    bottom: 0%;
+    z-index: 2;
+    /* border: 2px rgb(0, 255, 89) solid; */
+}
+
+.quotepic2 {
+    width: 100%;
+    margin-top: 1%;
+}
+
+.quoteword {
+    /* border: 2px rgb(246, 255, 0) solid; */
+    position: absolute;
+    height: 30%;
+    color: rgb(255, 255, 255);
+    right: 10%;
+    margin-top: 10%;
+    font-size: 50px;
+    letter-spacing: 6px;
+}
+
+/* slogan結束 */
+
+/* 熱銷商品 */
+.GOODTODRINK {
+    margin-top: 10%;
+    margin-left: 8%;
+    position: absolute;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 50;
+    letter-spacing: 30px;
+    line-height: 150%;
+}
+
+/* 熱銷商品的標題 */
+.hotsaletitle {
+    background-color: rgb(0, 0, 0);
+    line-height: 300%;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* border: #f00 2px solid; */
+}
+
+.CHHOTSALE {
+    letter-spacing: 15px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.HOTSALE {
+    letter-spacing: 20px;
+    font-size: 50px;
+    color: #fff;
+}
+
+
+
+.hotsale {
+    width: 100%;
+    /* border: 2px rgb(0, 255, 51) solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+/* 熱銷商品 */
+
+
+:root {
+    --card-width: 200px;
+    --card-height: 300px;
+    --card-transition-duration: 800ms;
+    --card-transition-easing: ease;
+}
+
+
+
+/*body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.787); 
+    overflow: hidden;
+}*/
+
+
+
+
+.app {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8%;
+    /* border: #f00 2px solid; */
+}
+
+/* .app__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+  filter: blur(8px);
+  pointer-events: none;
+  user-select: none;
+  overflow: hidden;
+} */
+
+/* .app__bg::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 1;
+  opacity: 0.8;
+} */
+
+/* .app__bg__image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) translateX(var(--image-translate-offset, 0));
+  width: 180%;
+  height: 180%;
+  transition: transform 1000ms ease, opacity 1000ms ease;
+  overflow: hidden;
+} */
+
+/* .app__bg__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+/* .app__bg__image.current--image {
+  opacity: 1;
+  --image-translate-offset: 0;
+} */
+
+/* .app__bg__image.previous--image,
+.app__bg__image.next--image {
+  opacity: 0;
+}
+
+.app__bg__image.previous--image {
+  --image-translate-offset: -25%;
+}
+
+.app__bg__image.next--image {
+  --image-translate-offset: 25%;
+} */
+
+.cardList {
+    position: absolute;
+    width: calc(3 * var(--card-width));
+    height: auto;
+
+}
+
+.cardList__btn {
+    --btn-size: 35px;
+    width: var(--btn-size);
+    height: var(--btn-size);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+
+}
+
+.cardList__btn.btn--left {
+    left: -5%;
+}
+
+.cardList__btn.btn--right {
+    right: -5%;
+}
+
+.cardList__btn .icon {
+    width: 100%;
+    height: 100%;
+}
+
+.cardList__btn .icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.cardList .cards__wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+
+}
+
+.card {
+    --card-translateY-offset: 100vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) translateX(var(--card-translateX-offset)) translateY(var(--card-translateY-offset)) rotateY(var(--card-rotation-offset)) scale(var(--card-scale-offset));
+    display: inline-block;
+    width: var(--card-width);
+    height: var(--card-height);
+    transition: transform var(--card-transition-duration) var(--card-transition-easing);
+    user-select: none;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 1;
+    transition: opacity var(--card-transition-duration) var(--card-transition-easing);
+    opacity: calc(1 - var(--opacity));
+}
+
+.card__image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.card__image img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card.current--card {
+    --current-card-rotation-offset: 0;
+    --card-translateX-offset: 0;
+    --card-rotation-offset: var(--current-card-rotation-offset);
+    --card-scale-offset: 1.2;
+    --opacity: 0.8;
+}
+
+.card.previous--card {
+    --card-translateX-offset: calc(-1 * var(--card-width) * 1.1);
+    --card-rotation-offset: 25deg;
+}
+
+.card.next--card {
+    --card-translateX-offset: calc(var(--card-width) * 1.1);
+    --card-rotation-offset: -25deg;
+}
+
+.card.previous--card,
+.card.next--card {
+    --card-scale-offset: 0.9;
+    --opacity: 0.4;
+}
+
+.infoList {
+    position: absolute;
+    width: calc(3 * var(--card-width));
+    height: var(--card-height);
+    pointer-events: none;
+}
+
+.infoList .info__wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    /* border: rgb(30, 71, 209) 2px solid; */
+}
+
+.info {
+    margin-bottom: calc(var(--card-height) / 8);
+    margin-left: calc(var(--card-width) / 1.5);
+    transform: translateZ(2rem);
+    transition: transform var(--card-transition-duration) var(--card-transition-easing);
+}
+
+.info .text {
+    position: relative;
+    /* font-family: "Montserrat"; */
+    /* font-size: calc(var(--card-width) * var(--text-size-offset, 0.2)); */
+    white-space: nowrap;
+    color: #fff;
+    width: fit-content;
+}
+
+.winename {
+    font-size: 40px;
+    color: #fff;
+    /* font-family: "Montserrat"; */
+}
+
+.location {
+    font-size: 25px;
+    color: #fff;
+    /* font-family: "Montserrat"; */
+}
+
+.description {
+    font-size: 20px;
+    color: #fff;
+    font-family: 'EB Garamond';
+}
+
+.info .winename,
+.info .location {
+    text-transform: uppercase;
+}
+
+.info .location {
+    font-weight: 800;
+}
+
+.info .location {
+    --mg-left: 40px;
+    --text-size-offset: 0.12;
+    font-weight: 600;
+    margin-left: var(--mg-left);
+    margin-bottom: calc(var(--mg-left) / 2);
+    padding-bottom: 0.8rem;
+}
+
+.info .location::before,
+.info .location::after {
+    content: "";
+    position: absolute;
+    background: #fff;
+    left: 0%;
+    transform: translate(calc(-1 * var(--mg-left)), -50%);
+}
+
+.info .location::before {
+    top: 50%;
+    width: 20px;
+    height: 5px;
+}
+
+.info .location::after {
+    bottom: 0;
+    width: 60px;
+    height: 2px;
+}
+
+.info .description {
+    --text-size-offset: 0.065;
+    font-weight: 500;
+}
+
+.info.current--info {
+    opacity: 1;
+    display: block;
+}
+
+.info.previous--info,
+.info.next--info {
+    opacity: 0;
+    display: none;
+}
+
+/* .loading__wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  z-index: 200;
+} */
+
+/* .loading__wrapper .loader--text {
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: 500;
+  margin-bottom: 1.4rem;
+}*/
+
+/* .loading__wrapper .loader {
+  position: relative;
+  width: 200px;
+  height: 2px;
+ background: rgba(255, 255, 255, 0.25);
+} */
+
+/* .loading__wrapper .loader span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transform: scaleX(0);
+  transform-origin: left;
+}  */
+
+/* 推薦圖片大小 */
+@media only screen and (min-width: 800px) {
+    :root {
+        --card-width: 300px;
+        --card-height: 408px;
+        /* w:h=1:1.36 */
+    }
+}
+
+.support {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    padding: 10px;
+    display: flex;
+}
+
+.support a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 1.8rem;
+    backface-visibility: hidden;
+    transition: all 150ms ease;
+}
+
+.support a:hover {
+    transform: scale(1.1);
+}
+
+/* 推薦商品結束 */
+
+/* 歷史 */
+.history {
+    width: 100%;
+    /* border: yellow solid 3px; */
+    height: 770px;
+    position: relative;
+    display: flex;
+    background-color: #000;
+}
+
+.history_left {
+    width: 70%;
+    height: 100%;
+    /* border: rgb(255, 0, 0) solid 3px; */
+    position: absolute;
+    z-index: 1;
+}
+
+.history_pic {
+    height: 100%;
+}
+
+.history_right {
+    width: 50%;
+    height: 70%;
+    right: 0%;
+    top: 10%;
+    /* border: rgb(0, 136, 255) solid 3px; */
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(40, 39, 39);
+}
+
+.history_wordtitle {
+    /* border: rgb(0, 136, 255) solid 3px; */
+    line-height: 40px;
+    font-size: 30px;
+    color: #fff;
+    margin-left: 10%;
+    margin-top: 12%;
+    line-height: 50px;
+    letter-spacing: 20px;
+    padding-bottom: 3%;
+}
+
+.history_word {
+    /* border: rgb(0, 136, 255) solid 3px; */
+    line-height: 2.25;
+    width: 70%;
+    font-size: 17px;
+    font-family: 'EB Garamond', 'Noto Serif TC', serif;
+    color: #fff;
+    margin-left: 10%;
+}
+
+/* 禁止酒駕 */
+.warning {
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+    font-family: 'EB Garamond', 'Noto Serif TC', serif;
+}
+
+.warning img {
+    width: 55px;
+    height: 55px;
+}
+
+.warning .w-w {
+    margin-top: 10px;
+}
+
+/* 頁尾 */
+.bottom {
+    /* border: 2px solid goldenrod; */
+    height: 380px;
+    display: flex;
+    color: white;
+    background: linear-gradient(to right bottom, rgb(54, 54, 54), rgb(11, 11, 11));
+}
+
+.bottom-title {
+    font-size: 25px;
+    flex-grow: 2;
+    padding: 30px;
+    letter-spacing: 20px;
+    line-height: 2.25;
+    /* line-height: 60px; */
+}
+
+.footer-title {
+    letter-spacing: 10px;
+
+}
+
+.about {
+    flex-grow: 2;
+    padding: 30px;
+}
+
+.bottom a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.bottom a:hover {
+    color: #C0A06A;
+}
+
+.contact {
+    flex-grow: 4;
+    padding: 30px;
+}
+
+footer {
+    font-family: 'EB Garamond', 'Noto Serif TC', serif;
+    line-height: 38px;
+}

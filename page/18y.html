@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOOD TO DRINK</title>
+    <link rel="icon" type="image" href="photo/icon/wine-bottle.png">
+    <link rel="stylesheet" href="../assets/css/18y.css">
+    <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200&display=swap');
+    </style>
+</head>
+<body>
+  <div class="popup"> <!-- popup content start || copy this to the end of the file-->
+    <div class="top-title">
+      <p class="t">GOOD TO</p>
+    </div>
+      <div class="popup_txt">
+        <div class="row">
+          <p class="text">你是否已滿18歲合法飲酒年齡?</p>
+          <div class="answer">
+            <button class="btn" onclick="window.close();" id="yes"> 是</button>
+            <div class="nothing"></div>
+            <button class="btn" onclick="c();">否</button>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-title">
+        <p class="t">DRINK</p>
+      </div>
+    
+  </div>
+<!-- popup content ends -->
+<script>
+//      $(function() {
+
+            
+//  var new_date = moment().subtract('years', 21);
+
+//  var day = new_date.format('DD');
+//  var month = new_date.format('MM');
+//  var year = new_date.format('YYYY');
+
+//  date =(month + '-' + day + '-' + year);
+
+//  document.getElementById('date').innerHTML = date;
+
+//      });
+ 
+    
+
+
+
+// $(".popup_img_yes").click(function() {
+//   $(".popup").fadeOut(1200);
+
+// });
+function c() {
+  m = confirm('提醒你中華法規規定未滿18歲請勿飲酒'); 
+}
+ function a() {
+  window.location.href="../Good To Drink/index.html"  ;
+}
+</script>   
+</body>
+</html>

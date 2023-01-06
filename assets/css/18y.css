@@ -1,0 +1,82 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(25, 25, 25);
+    font-family: 'EB Garamond', 'Noto Serif TC', serif;
+}
+
+.text {
+    font-size: 25px;
+    letter-spacing: 10px;
+    margin-bottom: 3%;
+}
+
+.answer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    width: 100%;
+}
+
+.popup_txt {
+    width: 100%;
+    height: 40%;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btn {
+    padding: 1% 1%;
+    /* 平行 */
+    width: 13%;
+    position: relative;
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(210, 210, 210);
+    cursor: pointer;
+    transition: .1s;
+    font-family: 'EB Garamond', 'Noto Serif TC', serif;
+    border: none;
+}
+
+.nothing {
+    width: 2%;
+}
+
+.btn:hover {
+    background-color: rgb(185, 185, 185);
+}
+
+.top-title,
+.bottom-title {
+    width: 100%;
+    height: 30%;
+    color: rgb(37, 37, 37);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.t {
+    letter-spacing: 100px;
+    font-size: 150px;
+}

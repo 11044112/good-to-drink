@@ -1,0 +1,422 @@
+body {
+    background-color: rgb(25, 25, 25);
+    font-family: 'EB Garamond', 'Noto Serif TC', serif;
+}
+
+/* 導覽列 */
+/* * {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+} */
+.search {
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+}
+
+.search input#search {
+    width: 10px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.01);
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #262626;
+    padding-left: 0px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #fff;
+    -webkit-transition: width .55s ease;
+    -moz-transition: width .55s ease;
+    -ms-transition: width .55s ease;
+    -o-transition: width .55s ease;
+    transition: width .55s ease;
+}
+
+.search input#search::-webkit-input-placeholder {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.search.icon {
+    position: absolute;
+    top: 50%;
+    margin-left: 0px;
+    margin-top: 17px;
+    z-index: 1;
+    color: #4f5b66;
+}
+
+.search input#search:focus,
+.search input#search:active {
+    outline: none;
+    width: 150px;
+}
+
+.search:hover input#search {
+    width: 150px;
+}
+
+.search:hover .icon {
+    color: #93a2ad;
+}
+
+#nav {
+    /* border: 2px solid palevioletred; */
+    width: 100%;
+    height: 100px;
+    display: flex;
+
+    z-index: 1000;
+    /* 調整透明度 */
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+    position: fixed;
+    color: white;
+    /* 調整透明度 */
+    /* opacity: 0.9; */
+    /* transition: opacity .3s ease, background-color .3s ease; */
+
+}
+
+
+
+/* 旁邊的logo */
+.logo {
+    /* border: 2px solid greenyellow; */
+    height: 100%;
+    width: 25%;
+    /* padding: 10px; */
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 5px;
+    line-height: 5px;
+
+
+
+}
+
+.wrap-logo {
+    display: flex;
+    /* border: 2px solid royalblue; */
+    position: relative;
+    align-items: center;
+    margin: 2%;
+    height: 90px;
+}
+
+.wrap-logo>a img {
+    position: relative;
+}
+
+.logo-title {
+    /* border: 2px solid rebeccapurple; */
+    position: relative;
+    margin-left: 2px;
+    line-height: 25px;
+}
+
+.logo a>img {
+    display: block;
+    margin: auto;
+    padding: 2px;
+    height: 60px;
+    width: 60px;
+    /* border: 2px solid black; */
+}
+
+.homepage-logo {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 旁邊的logo結束 */
+
+/* 下拉式選單 */
+.nav-title {
+
+    position: relative;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* margin-top: 1%; */
+    height: 100%;
+    width: 50%;
+    float: left;
+    /* border: 2px solid darkcyan; */
+    text-align: center;
+}
+
+.name {
+    position: relative;
+    /* left: 20%; */
+}
+
+.nav-name>li {
+    float: left;
+}
+
+.nav-title li {
+    list-style: none;
+    position: relative;
+
+}
+
+.name {
+    width: 20%;
+}
+
+.nav-title ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+}
+
+/* name漂浮改變顏色 */
+.nav-name>li>a:hover {
+    color: #C0A06A;
+}
+
+.subname li a {
+    background-color: rgba(0, 0, 0, 0.6);
+    /* subname的標題 */
+    border: 0.1px solid gray;
+    line-height: 70px;
+}
+
+.subname li a:hover {
+    background-color: rgb(172, 172, 172);
+}
+
+.nav-name a {
+    text-decoration: none;
+    color: inherit;
+    /* background-color: blue; */
+    /* width: 300px; */
+    /* border: 2px solid rgb(123, 47, 47); */
+    display: block;
+    line-height: 100px;
+
+}
+
+.nav-name ul {
+    display: none;
+    /* subname總框架 */
+
+
+
+}
+
+.nav-name .name:hover ul {
+    display: block;
+
+}
+
+/* 下拉式選單結束 */
+/* 導覽列右側 */
+.right-icon {
+    /* container包住items，items有彈性 */
+    display: flex;
+    /* 水平置中 */
+    justify-content: center;
+    /* 垂直置中 */
+    align-items: center;
+    /* border: 2px solid chocolate; */
+    margin-left: 4%;
+    width: 20%;
+}
+
+.right-icon img {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    /* border: 2px solid chartreuse; */
+}
+
+/* 導覽列結束 */
+
+.mappp {
+    width: 100%;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.map {
+    box-shadow: 10px 10px 10px;
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+.mapp {
+    display: flex;
+    width: 40%;
+    float: left;
+}
+
+
+
+.gap-2 {
+    display: flex;
+    float: left;
+    width: 3%;
+}
+
+h2 {
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.concact_us {
+    width: 25%;
+    height: 100%;
+    /* padding: 10px 10px; */
+    float: right;
+    /* border: 2px solid yellow; */
+    margin-top: 20%;
+    /* margin-right: 10%; */
+}
+
+.concact_us input {
+    font-size: 15px;
+    color: white;
+    width: 90%;
+    border: none;
+    box-shadow: 0 0.5px;
+    padding: 2px 0px;
+    outline: none;
+    margin: 16px;
+    background-color: rgb(25, 25, 25);
+    font-family: 'EB Garamond', 'Noto Serif TC', serif;
+    /* border: 3px solid rebeccapurple; */
+}
+
+.clear {
+    clear: both;
+}
+
+.content {
+    font-size: 16px;
+    color: white;
+    resize: none;
+    width: 90%;
+    height: 140px;
+    outline: none;
+    margin: 16px;
+    background-color: rgb(25, 25, 25);
+    font-family: 'EB Garamond', 'Noto Serif TC', serif;
+}
+
+h3 {
+    font-size: 17px;
+    color: white;
+    padding-bottom: 100%;
+    padding: 2px 0px;
+    width: 100%;
+    text-align: left;
+    margin: 0px 16px;
+    letter-spacing: 2px;
+
+}
+
+button {
+    font-size: 15px;
+    letter-spacing: 3px;
+    height: 40px;
+    width: 90%;
+    color: black;
+    background-color: rgb(210, 210, 210);
+    border: 1px solid rgb(210, 210, 210);
+    transition: 0.5s;
+    margin-top: 5px;
+    cursor: pointer;
+    margin: 0px 16px;
+    font-family: 'EB Garamond', 'Noto Serif TC', serif;
+}
+
+button:hover {
+    cursor: pointer;
+    color: white;
+    background: none;
+}
+
+/* 禁止酒駕 */
+.warning {
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+    font-family: 'EB Garamond', 'Noto Serif TC', serif;
+}
+
+.warning img {
+    width: 55px;
+    height: 55px;
+}
+
+.warning .w-w {
+    margin-top: 10px;
+}
+
+/* 頁尾 */
+.bottom {
+    /* border: 2px solid goldenrod; */
+    height: 380px;
+    display: flex;
+    color: white;
+    background: linear-gradient(to right bottom, rgb(54, 54, 54), rgb(11, 11, 11));
+}
+
+.bottom-title {
+    font-size: 25px;
+    flex-grow: 2;
+    padding: 30px;
+    letter-spacing: 20px;
+    line-height: 2.25;
+}
+
+.footer-title {
+    letter-spacing: 10px;
+
+}
+
+.about {
+    flex-grow: 2;
+    padding: 30px;
+}
+
+.bottom a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.bottom a:hover {
+    color: #C0A06A;
+}
+
+.contact {
+    flex-grow: 4;
+    padding: 30px;
+}
+
+footer {
+    font-family: 'EB Garamond', 'Noto Serif TC', serif;
+    line-height: 38px;
+}

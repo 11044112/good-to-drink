@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車</title>
+    <link rel="icon" type="image" href="../assets/images/wine-bottle.png">
+    <link rel="stylesheet" href="../assets/css/shoppingcar.css">
+    <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- 導覽列 -->
+    <header>
+        <nav id="nav" class="nav">
+            <!-- 小圖示 -->
+            <div class="logo">
+                <div class="wrap-logo">
+                    <a href="../index.html"><img src="../assets/images/wine-bottle-white.png" alt=""></a>
+                    <a href="../index.html" class="homepage-logo">
+                        <div class="logo-title">
+                            <p>GOOD</p>
+                            <p>TO</p>
+                            <p>DRINK</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- 下拉式選單 -->
+            <div class="nav-title">
+                <!-- 加上連結 -->
+                <ul class="nav-name">
+                    <li class="name"><a href="../page/personal.html">品牌介紹</a></li>
+                    <li class="name"><a href="wine.html">葡萄酒 &equiv;</a>
+                        <div class="subname">
+                            <ul>
+                                <li><a href="redwine.html">紅酒</a></li>
+                                <li><a href="whitewine.html">白酒</a></li>
+                                <li><a href="pinkwine.html">粉紅酒</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="name"><a href="dragonwine.html">烈酒 &equiv;</a>
+                        <ul class="subname">
+                            <li><a href="dragonwine.html">龍舌蘭</a></li>
+                        </ul>
+                    </li>
+                    <li class="name"><a href="order.html">會員資訊</a></li>
+                    <li class="name"><a href="contactus.html">聯絡我們</a></li>
+                </ul>
+            </div>
+            <!-- 購物車+會員資訊+收藏 -->
+            <div class="right-icon">
+                <div class="member">
+                    <a href="member.html"><img src="../assets/images/user.png" alt=""></a>
+                </div>
+                <div class="cart">
+                    <a href="shoppingcar.html"><img src="../assets/images/grocery-store.png" alt=""></a>
+                </div>
+                <!-- 產生搜尋框 -->
+                <div class="search">
+                    <a href=""><img src="../assets/images/search.png" alt=""></a>
+                    <input type="search" id="search" placeholder="Search..." />
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- 導覽列結束 -->
+
+    <section>
+        <div class="product-title">
+            <p>SHOPPING CART</p>
+            <p>購物車</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="shoppingcart">
+            <div class="right">
+                <div class="cartcontainer">
+                    <div class="cart_img">
+                        <img class="cart_img_img" src="../assets/images/p1.png" alt="">
+                    </div>
+                    <div class="cart_word">
+                        <div class="cart_word_word">
+                            <p>木橋~微甜粉紅酒 </p>
+                            <p>Woodbridge Rosé</p>
+                            <p>售價:$ 750/瓶</p>
+                        </div>
+                    </div>
+                    <div class="cart_button">
+                        <div class="quantity">
+                            <!-- <li id="minus" style="border: none;"><input type="button" onclick="minuser()" value="-"/></li>
+                            <li id="countnum">0</li>
+                            <li id="plus"><input type="button" onclick="adder()" value="+"/></li> -->
+                            <div class="buttoncontainer">
+                                <input type="button" class="num-button-minus" value="-" id="btnOne" onclick="minusNUM(0)">
+                                <input type="text" id="num" class="number" value="1">
+                                <input type="button" class="num-button-add" value="+" id="btnTwo" onclick="addNUM(0)">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart_total">
+                        <p>小計：750</p>
+                    </div>
+                    <button class="delete">✕</button>
+                </div>
+                <hr class="hr" color="white" width="90%">
+                <div class="cartcontainer">
+                    <div class="cart_img">
+                        <img class="cart_img_img" src="../assets/images/r2.png" alt="">
+                    </div>
+                    <div class="cart_word">
+                        <div class="cart_word_word">
+                            <p>奧克維爾卡本內蘇維濃紅酒 2018 </p>
+                            <p>Oakville Cabernet Sauvignon '18</p>
+                            <p>售價:$ 4,250/瓶</p>
+                        </div>
+                    </div>
+                    <div class="cart_button">
+                        <div class="quantity">
+                            <div class="buttoncontainer">
+                                <input type="button" class="num-button-minus" value="-" id="btnOne" onclick="minusNUM(1)">
+                                <input type="text" id="num" class="number" value="1">
+                                <input type="button" class="num-button-add" value="+" id="btnTwo" onclick="addNUM(1)">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart_total">
+                        <p>小計：4250</p>
+                    </div>
+                    <button class="delete">✕</button>
+                </div>
+                <hr class="hr" color="white" width="90%">
+                <div class="cartcontainer">
+                    <div class="cart_img">
+                        <img class="cart_img_img" src="../assets/images/d1.png" alt="">
+                    </div>
+                    <div class="cart_word">
+                        <div class="cart_word_word">
+                            <p>卡薩貴族~水晶龍舌蘭</p>
+                            <p>CASA NOBLE Crystal Tequila</p>
+                            <p>售價:$ 2700/瓶</p>
+                        </div>
+                    </div>
+                    <div class="cart_button">
+                        <div class="quantity">
+                            <div class="buttoncontainer">
+                                <input type="button" class="num-button-minus" value="-" id="btnOne" onclick="minusNUM(2)">
+                                <input type="text" id="num" class="number" value="1">
+                                <input type="button" class="num-button-add" value="+" id="btnTwo" onclick="addNUM(2)">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart_total">
+                        <p>小計：2700</p>
+                    </div>
+                    <button class="delete">✕</button>
+                </div>
+                <hr class="hr" >
+                <div class="cartcontainer">
+                    <div class="cart_img">
+                        <img class="cart_img_img" src="../assets/images/w1.png" alt="">
+                    </div>
+                    <div class="cart_word">
+                        <div class="cart_word_word">
+                            <p>那帕山谷~白芙美白酒 2019</p>
+                            <p> Napa Valley Fumé Blanc '19</p>
+                            <p>售價:$ 1,950/瓶</p>
+                        </div>
+                    </div>
+                    <div class="cart_button">
+                        <div class="quantity">
+                            <div class="buttoncontainer">
+                                <input type="button" class="num-button-minus" value="-" id="btnOne" onclick="minusNUM(3)">
+                                <input type="text" id="num" class="number" value="1">
+                                <input type="button" class="num-button-add" value="+" id="btnTwo" onclick="addNUM(3)">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart_total">
+                        <p>小計：1950</p>
+                    </div>
+                    <button class="delete">✕</button>
+                </div>
+                <br><br><br>
+            </div>
+
+            <div class="left">
+                <div class="total">
+                    <p class="Order">Order</p>
+                    <hr class="total_hr">
+                    <div class="Subtotal">
+                        <p>Subtotal</p>
+                        <p>NT$9650</p>
+                    </div>
+                    <div class="Shipping">
+                        <p>Shipping</p>
+                        <p>NT$0</p>
+                    </div>
+                    <hr class="total_hr">
+                    <div class="Order_Total">
+                        <p>Order Total</p>
+                        <p>NT$9650</p>
+                    </div>
+                    <div class="back">
+                        <a href="products.html"><input type="button" class="backk" value="Back To Shop" onclick="location.href='home'"></a>
+                        <a href=""><input type="button" class="check" value="Check Out" onclick="location.href='home'"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+    <!-- 禁止酒駕 -->
+    <section>
+        <div class="warning">
+            <div class="w-w">禁</div>
+            <div class="w-w">止</div>
+            <div class="w-w">酒</div>
+            <div class="w-w">駕</div>
+            <div class="w-w"><img src="../assets/images/icon_ban.png" alt=""></div>
+            <div class="w-w">飲</div>
+            <div class="w-w">酒</div>
+            <div class="w-w">過</div>
+            <div class="w-w">量</div>
+            <div class="w-w">有</div>
+            <div class="w-w">害</div>
+            <div class="w-w">健</div>
+            <div class="w-w">康</div>
+        </div>
+    </section>
+    <!-- 頁尾 -->
+    <footer>
+    <section>
+        <div class="bottom">
+            <div class="bottom-title">
+                <p>GOOD</p>
+                <p>TO</p>
+                <p>DRINK</p>
+            </div>
+            <div class="about">
+                <p class="footer-title">ABOUT</p><br>
+                <p><a href="personal.html">品牌介紹</a></p>
+                <p><a href="contactus.html">聯絡我們</a></p>
+                <p><a href="products.html">商品介紹</a></p>
+                <p><a href="order.html">會員資訊</a></p>
+            </div>
+            <div class="contact">
+                <p class="footer-title">CONTACT</p><br>
+                <p>TEL (03)265-9999</p>
+                <p>FAX (03)265-9999</p>
+                <p><a href="https://www.google.com/maps/place/320%E6%A1%83%E5%9C%92%E5%B8%82%E4%B8%AD%E5%A3%A2%E5%8D%80%E4%B8%AD%E5%8C%97%E8%B7%AF200%E8%99%9F/@24.9574977,121.240539,17z/data=!3m1!4b1!4m5!3m4!1s0x34682215ec48cb33:0x1bdd35564f192bca!8m2!3d24.9574977!4d121.240539">桃園市中壢區中北路200號</a></p>
+            </div>
+        </div>
+    </section>
+    </footer>
+</body>
+<script>
+    // Enable hiddle nav bar
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("nav").style.top = "0";
+      } else {
+        document.getElementById("nav").style.top = "-130px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+    // if(window.scrollTo(0,0)){
+    //   document.getElementById("nav").style.opacity = "0";
+    // })
+        function minusNUM(num){
+            let input = Number(document.getElementsByClassName('number')[num].value);
+            if(input != 1){
+                document.getElementsByClassName('number')[num].value = input-1;
+            }
+        }
+        function addNUM(num){
+            let input = Number(document.getElementsByClassName('number')[num].value);
+            if(input >= 1){
+                document.getElementsByClassName('number')[num].value = input+1;
+            }
+        }
+        // function adder(){
+        //     var count=document.getElementById("countnum").innerHTML;
+        //     count=parseInt(count)+1;
+        //     document.getElementById("countnum").innerHTML=count;
+        // }
+        // function minuser(){
+        //     var count=document.getElementById("countnum").innerHTML;
+        //     if(count<=0){
+        //         count=0;
+        //     }else{
+        //         count=parseInt(count)-1;
+        //     }
+        //     document.getElementById("countnum").innerHTML=count;
+        // }
+    </script>
+</body>
+
+</html>

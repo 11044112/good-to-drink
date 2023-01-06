@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員資訊</title>
+    <link rel="icon" type="image" href="../assets/images/wine-bottle.png">
+    <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200&display=swap');
+    </style>
+    <link rel="stylesheet" href="../assets/css/order.css">
+</head>
+<body>
+    <!-- 導覽列 -->
+    <header>
+        <nav id="nav" class="nav">
+            <!-- 小圖示 -->
+            <div class="logo">
+                <div class="wrap-logo">
+                    <a href="../index.html"><img src="../assets/images/wine-bottle-white.png" alt=""></a>
+                    <a href="../index.html" class="homepage-logo">
+                        <div class="logo-title">
+                            <p>GOOD</p>
+                            <p>TO</p>
+                            <p>DRINK</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- 下拉式選單 -->
+            <div class="nav-title">
+                <!-- 加上連結 -->
+                <ul class="nav-name">
+                    <li class="name"><a href="../page/personal.html">品牌介紹</a></li>
+                    <li class="name"><a href="wine.html">葡萄酒 &equiv;</a>
+                        <div class="subname">
+                            <ul>
+                                <li><a href="redwine.html">紅酒</a></li>
+                                <li><a href="whitewine.html">白酒</a></li>
+                                <li><a href="pinkwine.html">粉紅酒</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="name"><a href="dragonwine.html">烈酒 &equiv;</a>
+                        <ul class="subname">
+                            <li><a href="dragonwine.html">龍舌蘭</a></li>
+                        </ul>
+                    </li>
+                    <li class="name"><a href="order.html">會員資訊</a></li>
+                    <li class="name"><a href="contactus.html">聯絡我們</a></li>
+                </ul>
+            </div>
+            <!-- 購物車+會員資訊+收藏 -->
+            <div class="right-icon">
+                <div class="member">
+                    <a href="member.html"><img src="../assets/images/user.png" alt=""></a>
+                </div>
+                <div class="cart">
+                    <a href="shoppingcar.html"><img src="../assets/images/grocery-store.png" alt=""></a>
+                </div>
+                <!-- 產生搜尋框 -->
+                <div class="search">
+                    <a href=""><img src="../assets/images/search.png" alt=""></a>
+                    <input type="search" id="search" placeholder="Search..." />
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- 導覽列結束 -->
+    <section class="s1">
+        <div class="container2">
+            <div class="content">
+                <input type="radio" name="slider" checked id="modify">
+                <input type="radio" name="slider" id="record">
+                <div class="list">
+                    <label for="modify" class="modify">
+                        <span class="ti">會員資料</span>
+                    </label>
+                    <label for="record" class="record">
+                        <span class="ti">訂單紀錄</span>
+                    </label>
+                    <div class="slider"></div>
+                </div>
+                <div class="text-content">
+                    <div class="modify text">
+                        <div class="rr">
+                            <div class="info">
+                                <p class="b">會員資料</p>
+                                <form action="">
+                                    <div class="mod-txt">
+                                        <input type="text" name id placeholder="Name" value="小山豬">
+                                        <!-- 改日曆顏色 -->
+                                        <label for="start" ></label>
+                                        <input type="date" id="start" name="trip-start"
+                                        value="2003-07-19">
+                                        <input type="text" name id placeholder="Celephone" value="0987654321">
+                                        <input type="text" name id placeholder="Email" value="goodtodrink@gmail.com">
+                                        <input type="text" name id placeholder="Address" value="320桃園市中壢區中北路200號中原大學資訊管理學系">
+                                    </div>
+                                    <input type="submit" value="UPDATE" class="p-sub">
+                                </form>
+                            </div>
+                            <div class="acc">
+                                <p class="b">帳號密碼</p>
+                                <form action="">
+                                    <div class="mod-txt">
+                                        <input type="text" name id placeholder="Account" value="smallpig">
+                                        <input type="text" name id placeholder="Password" value="*************">
+                                        <input type="text" name id placeholder="Checkpassword" value="*************">
+                                    </div>
+                                    <h3>*更改密碼請再次確認*</h3>
+                                    <input type="submit" value="UPDATE" class="p-sub">
+                                </form>
+                                <h2>*如需修改資料請直接填入欄位*</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="record text">
+                        <table class="r-table">
+                            <tbody>
+                                <tr><th>訂單編號</th>
+                                    <th class="dis">訂單日期</th>
+                                    <th>商品名稱</th>
+                                    <th>數量</th>
+                                    <th>訂單總額</th>
+                                    <th>訂單狀態</th>
+                                </tr>
+                                <tr>
+                                    <td>S11044129</td>
+                                    <td class="dis">2002/11/26</td>
+                                    <td><span>Oakville Cabernet<br>
+                                         Sauvignon '18</span></td>
+                                    <td>1</td>
+                                    <td>	$4250</td>
+                                    <td>已完成</td>
+                                </tr><hr size="1" color="white" >
+                                <tr>
+                                    <td>S11044140</td>
+                                    <td class="dis">2002/12/05</td>
+                                    <td><span>CASA NOBLE <br>
+                                        Crystal Tequila</span></td>
+                                    <td>2</td>
+                                    <td>$5400</td>
+                                    <td>已完成</td>
+                                </tr>
+                                <tr>
+                                    <td>S11044112</td>
+                                    <td class="dis">2003/07/19</td>
+                                    <td><span>Napa Valley<br>
+                                        Fumé Blanc '19  </span></td>
+                                    <td>3</td>
+                                    <td>$5850</td>
+                                    <td>未完成</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 禁止酒駕 -->
+    <section>
+        <div class="warning">
+            <div class="w-w">禁</div>
+            <div class="w-w">止</div>
+            <div class="w-w">酒</div>
+            <div class="w-w">駕</div>
+            <div class="w-w"><img src="../assets/images/icon_ban.png" alt=""></div>
+            <div class="w-w">飲</div>
+            <div class="w-w">酒</div>
+            <div class="w-w">過</div>
+            <div class="w-w">量</div>
+            <div class="w-w">有</div>
+            <div class="w-w">害</div>
+            <div class="w-w">健</div>
+            <div class="w-w">康</div>
+        </div>
+    </section> 
+
+    <!-- 頁尾-->
+    <footer>
+        <section>
+            <div class="bottom">
+                <div class="bottom-title">
+                    <p>GOOD</p>
+                    <p>TO</p>
+                    <p>DRINK</p>
+                </div>
+                <div class="about">
+                    <p class="footer-title">ABOUT</p><br>
+                    <p><a href="personal.html">品牌介紹</a></p>
+                    <p><a href="contactus.html">聯絡我們</a></p>
+                    <p><a href="products.html">商品介紹</a></p>
+                    <p><a href="order.html">會員資訊</a></p>
+                </div>
+                <div class="contact">
+                    <p class="footer-title">CONTACT</p><br>
+                    <p>TEL (03)265-9999</p>
+                    <p>FAX (03)265-9999</p>
+                    <p><a href="https://www.google.com/maps/place/320%E6%A1%83%E5%9C%92%E5%B8%82%E4%B8%AD%E5%A3%A2%E5%8D%80%E4%B8%AD%E5%8C%97%E8%B7%AF200%E8%99%9F/@24.9574977,121.240539,17z/data=!3m1!4b1!4m5!3m4!1s0x34682215ec48cb33:0x1bdd35564f192bca!8m2!3d24.9574977!4d121.240539">桃園市中壢區中北路200號</a></p>
+                </div>
+            </div>
+        </section>
+        </footer>
+    
+</body>
+<script>
+    // Enable hiddle nav bar
+    var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("nav").style.top = "0";
+                } else {
+                    document.getElementById("nav").style.top = "-130px";
+                }
+            prevScrollpos = currentScrollPos;
+            }
+</script>
+</html>

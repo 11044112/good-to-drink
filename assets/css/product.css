@@ -1,0 +1,828 @@
+/* 滾動條*/
+/* 滾動條的寬度 */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* 滾動條和視窗上下間距的樣式 */
+::-webkit-scrollbar-button {
+    /* background: transparent; */
+    background: rgb(40, 39, 39);
+    height: 20px;
+    display: none;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background: rgb(40, 39, 39);
+
+}
+
+/* 滑塊的樣式 */
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgb(83, 83, 83);
+    /* border: 1px solid slategrey; */
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: transparent;
+}
+
+/* 滾動條結束*/
+
+.outside {
+    width: 100%;
+    /* border: 2px solid blue; */
+    margin: 0%;
+    background-color: rgb(25, 25, 25);
+    color: white;
+    /* 英文字體: Garamond */
+    font-family: 'EB Garamond', 'Noto Serif TC', serif;
+}
+
+/* 導覽列 */
+/* * {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+} */
+.search {
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+}
+
+.search input#search {
+    width: 10px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.01);
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #262626;
+    padding-left: 0px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #fff;
+    -webkit-transition: width .55s ease;
+    -moz-transition: width .55s ease;
+    -ms-transition: width .55s ease;
+    -o-transition: width .55s ease;
+    transition: width .55s ease;
+}
+
+.search input#search::-webkit-input-placeholder {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.search.icon {
+    position: absolute;
+    top: 50%;
+    margin-left: 0px;
+    margin-top: 17px;
+    z-index: 1;
+    color: #4f5b66;
+}
+
+.search input#search:focus,
+.search input#search:active {
+    outline: none;
+    width: 150px;
+}
+
+.search:hover input#search {
+    width: 150px;
+}
+
+.search:hover .icon {
+    color: #93a2ad;
+}
+
+
+#nav {
+    /* border: 2px solid palevioletred; */
+    width: 100%;
+    height: 100px;
+    display: flex;
+
+    z-index: 1000;
+    /* 調整透明度 */
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 1;
+    position: fixed;
+    color: white;
+    /* 調整透明度 */
+    /* opacity: 0.9; */
+    /* transition: top 0.5s ease; */
+    /* transition: 0.4s;
+    opacity: 0; */
+
+}
+
+
+
+
+/* 旁邊的logo */
+.logo {
+    /* border: 2px solid greenyellow; */
+    height: 100%;
+    width: 25%;
+    /* padding: 10px; */
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 5px;
+    line-height: 5px;
+
+
+
+}
+
+.wrap-logo {
+    display: flex;
+    /* border: 2px solid royalblue; */
+    position: relative;
+    align-items: center;
+    margin: 2%;
+    height: 90px;
+}
+
+.wrap-logo>a img {
+    position: relative;
+}
+
+.logo-title {
+    /* border: 2px solid rebeccapurple; */
+    position: relative;
+    margin-left: 2px;
+}
+
+.logo a>img {
+    display: block;
+    margin: auto;
+    padding: 2px;
+    height: 60px;
+    width: 60px;
+    /* border: 2px solid black; */
+}
+
+.homepage-logo {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 旁邊的logo結束 */
+
+/* 下拉式選單 */
+.nav-title {
+
+    position: relative;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* margin-top: 1%; */
+    height: 100%;
+    width: 50%;
+    float: left;
+    /* border: 2px solid darkcyan; */
+    text-align: center;
+}
+
+.name {
+    position: relative;
+    /* left: 20%; */
+}
+
+.nav-name>li {
+    float: left;
+}
+
+.nav-title li {
+    list-style: none;
+    position: relative;
+
+}
+
+.name {
+    width: 20%;
+}
+
+.nav-title ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+}
+
+/* name漂浮改變顏色 */
+.nav-name>li>a:hover {
+    color: #C0A06A;
+}
+
+.subname li a {
+    background-color: rgba(0, 0, 0, 0.6);
+    /* subname的標題 */
+    border: 0.1px solid gray;
+    line-height: 70px;
+}
+
+.subname li a:hover {
+    background-color: rgb(172, 172, 172);
+}
+
+.nav-name a {
+    text-decoration: none;
+    color: inherit;
+    /* background-color: blue; */
+    /* width: 300px; */
+    /* border: 2px solid rgb(123, 47, 47); */
+    display: block;
+    line-height: 100px;
+
+}
+
+.nav-name ul {
+    display: none;
+    /* subname總框架 */
+
+
+
+}
+
+.nav-name .name:hover ul {
+    display: block;
+
+}
+
+/* 下拉式選單結束 */
+/* 導覽列右側 */
+.right-icon {
+    /* container包住items，items有彈性 */
+    display: flex;
+    /* 水平置中 */
+    justify-content: center;
+    /* 垂直置中 */
+    align-items: center;
+    /* border: 2px solid chocolate; */
+    width: 20%;
+    margin-left: 4%;
+}
+
+.right-icon img {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    /* border: 2px solid chartreuse; */
+}
+
+/* 導覽列結束 */
+
+
+/* 產品介紹 */
+
+.introduce {
+    width: 100%;
+    height: 755px;
+    /* border: 2px solid rgb(139, 93, 0); */
+    display: flex;
+    padding-top: 7%;
+
+}
+
+/* 介紹欄左側 */
+.introduce .wrap-introduce-left {
+    display: flex;
+    /* border: 5px solid yellow; */
+    width: 50%;
+    height: 100%;
+    position: relative;
+    float: left;
+
+
+}
+
+.background {
+    width: 75%;
+    height: 60%;
+    background: linear-gradient(to right bottom, rgb(79, 79, 79), rgb(36, 36, 36));
+    /* border: 5px solid red; */
+    /* 背景陰影 */
+    box-shadow: 10px -10px 50px 5px rgb(21, 21, 21);
+    position: absolute;
+    right: 12.5%;
+    /* margin-right: 12.5%; */
+    top: 20%;
+    z-index: 1;
+}
+
+.product-img {
+    width: 100%;
+    /* border: 2px solid rgb(0, 125, 139); */
+    position: absolute;
+    z-index: 2;
+}
+
+.product-img img {
+    width: 100%;
+    /* border: 2px solid rgb(139, 0, 100); */
+}
+
+
+/* 介紹欄右側 */
+
+.product-word {
+    width: 40%;
+    /* border: 5px solid rgb(0, 139, 19); */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+/* 字體大小、間距 */
+
+.justify-spacing {
+    letter-spacing: 3px;
+}
+
+.en-title {
+    width: 100%;
+    font-size: 35px;
+    /* border: 3px solid yellow; */
+}
+
+.ch-title {
+    width: 100%;
+    font-size: 20px;
+}
+
+.en-ch-title {
+    line-height: 10px;
+}
+
+.year {
+    line-height: 3px;
+}
+
+.wrap-product-word {
+    /* border: 2px solid saddlebrown; */
+    width: 80%;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.quantity {
+    border: 1px solid rgb(135, 135, 135);
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.quantity .num {
+    width: 30%;
+    text-align: center;
+    height: 90%;
+}
+
+.minus,
+.num,
+.add {
+    border: none;
+    background-color: white;
+    height: 100%;
+}
+
+.minus:hover,
+.add:hover {
+    cursor: pointer;
+    color: rgb(135, 135, 135);
+}
+
+.wrap-button {
+    display: flex;
+    gap: 3%;
+    /* border: 2px solid rgb(255, 0, 0); */
+}
+
+/* 加入購物車按鈕 */
+.add-to-cart {
+    color: white;
+    font-family: 'EB Garamond', 'Noto Serif TC', serif;
+    background-color: rgb(79, 79, 79);
+    transition: .3s;
+    font-size: 15px;
+    width: 60%;
+    border: none;
+    padding: 15px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.add-to-cart:hover {
+    cursor: pointer;
+}
+
+/* .add-to-cart:hover {
+    cursor: pointer;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(79, 79, 79);
+} */
+
+/* 加入收藏按鈕 */
+.fav img {
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fav {
+    color: white;
+    background-color: rgb(79, 79, 79);
+    transition: .3s;
+    font-size: 13px;
+    width: 10%;
+    border: none;
+    padding: 15px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.fav:hover {
+    cursor: pointer;
+}
+
+/* 直接購買按鈕*/
+.buy-it-now {
+    color: rgb(0, 0, 0);
+    font-family: 'EB Garamond', 'Noto Serif TC', serif;
+    background-color: rgb(210, 210, 210);
+    transition: .3s;
+    font-size: 15px;
+    width: 100%;
+    border: 1px solid rgb(210, 210, 210);
+    padding: 15px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 3%;
+}
+
+.buy-it-now:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background: none;
+    border: 1px solid white;
+
+}
+
+/* 直接購買按鈕結束*/
+.product-introduce {
+    line-height: 35px;
+}
+
+
+/* 推薦商品 */
+.recommend {
+    /* border: 2px solid slateblue; */
+    height: 600px;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* 推薦商品 */
+/* RECOMMEND */
+.recommend-background {
+    background-color: rgb(34, 34, 34);
+}
+
+.recommend-title {
+    height: 200px;
+    /* border: 2px solid red; */
+    width: 100%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    letter-spacing: 10px;
+    line-height: 5px;
+}
+
+.ch-recommend-title {
+    font-size: 20px;
+}
+
+.en-recommend-title {
+    font-size: 30px;
+}
+
+/* 推薦商品列 */
+
+.wrap-recommend {
+    width: 400px;
+    height: 570px;
+    margin-bottom: 70px;
+    /* border: 2px solid purple; */
+    display: block;
+
+}
+
+.wrap-recommend a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.recommend-content {
+    width: 400px;
+    height: 150px;
+    /* border: 2px solid teal; */
+    position: relative;
+    top: 135px;
+
+
+}
+
+.wrap-recommend .recommend-img {
+    background: linear-gradient(to right bottom, rgb(88, 88, 88), rgb(35, 35, 35));
+    width: 400px;
+    height: 280px;
+}
+
+.wrap-recommend .recommend-img img {
+    height: 380px;
+    /* 圖片置中 */
+    display: block;
+    margin: auto;
+    /* border: 2px solid yellow; */
+    padding: 30px 0px;
+}
+
+/* 觸發上移 */
+.wrap-recommend .recommend-img img:hover {
+    transform: translate(0px, -20px);
+    transition: 0.5s;
+}
+
+/* 調整字體大小 */
+.recommend-product-en-title {
+    font-size: 19px;
+    margin-bottom: -3%;
+    /* letter-spacing: 2px; */
+}
+
+.recommend-product-ch-title {
+    font-size: 17px;
+    margin-bottom: 6%;
+}
+
+.recommend-product-price {
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+/* 評論 */
+.rate {
+    /* border: 2px solid rgb(90, 194, 205); */
+    width: 100%;
+    height: 600px;
+    display: flex;
+    /* padding-left: 5%; */
+
+}
+
+.send-title,
+.board-title {
+    height: 100px;
+    /* border: 2px solid red; */
+    width: 100%;
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 5px;
+    line-height: 5px;
+    font-size: 25px;
+}
+
+/* 評論左側 */
+.wrap-send {
+    width: 40%;
+    /* border: 2px solid rgb(205, 90, 90); */
+    margin-left: 10%;
+
+}
+
+.send-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid rgb(96, 205, 90); */
+}
+
+.input-name {
+    background-color: rgb(26, 26, 26);
+    border: none;
+    border-bottom: 1px solid rgb(210, 210, 210);
+    width: 60%;
+    margin-bottom: 4%;
+    outline: none;
+    font-size: 15px;
+    color: white;
+    /* border: 2px solid rgb(142, 90, 205); */
+}
+
+/* 
+.input-name::placeholder {} */
+
+.comment-place {
+    outline: none;
+    background-color: rgb(26, 26, 26);
+    border: 1px solid rgb(210, 210, 210);
+    font-size: 15px;
+    width: 60%;
+    color: white;
+}
+
+/* 
+.comment-place::placeholder {
+} */
+.send {
+    color: rgb(0, 0, 0);
+    background-color: rgb(210, 210, 210);
+    font-family: 'EB Garamond', 'Noto Serif TC', serif;
+    transition: .3s;
+    font-size: 15px;
+    width: 60%;
+    border: 1px solid rgb(210, 210, 210);
+    padding: 15px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 1%;
+
+}
+
+.send:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background: none;
+    border: 1px solid white;
+
+}
+
+/* 評分星星 */
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 60%;
+}
+
+.rating>input {
+    display: none;
+}
+
+.rating>label {
+    position: relative;
+    width: 8%;
+    margin-left: 2%;
+    font-size: 28px;
+    color: rgb(210, 210, 210);
+    cursor: pointer;
+}
+
+.rating>label::before {
+    content: "★";
+    position: absolute;
+    opacity: 0;
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+    opacity: 1;
+}
+
+.rating>input:checked~label:before {
+    opacity: 1;
+}
+
+.rating:hover>input:checked~label:before {
+    opacity: 0.4;
+}
+
+/* 留言框 */
+.comment-place {
+    resize: none;
+}
+
+/* 評論右側 */
+.wrap-board {
+    width: 40%;
+    flex-direction: row;
+    /* border: 2px solid rgb(205, 205, 90); */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.messenger-icon {
+    width: 25px;
+    height: 25px;
+
+}
+
+
+
+.board-block {
+    width: 60%;
+    /* border: 5px solid rgb(255, 47, 47); */
+    padding: 5%;
+    background-color: rgba(34, 34, 34, 0.6);
+}
+
+.board {
+    /* border: 3px solid slateblue; */
+    border-bottom: 1px solid rgb(210, 210, 210);
+    width: 100%;
+    margin-bottom: 4%;
+}
+
+/* 禁止酒駕 */
+.warning {
+    background-color: rgb(26, 26, 26);
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.warning img {
+    width: 55px;
+    height: 55px;
+}
+
+.warning .w-w {
+    margin-top: 10px;
+}
+
+/* 頁尾 */
+.bottom {
+    /* border: 2px solid goldenrod; */
+    height: 380px;
+    display: flex;
+    color: white;
+    background: linear-gradient(to right bottom, rgb(79, 79, 79), rgb(36, 36, 36));
+
+}
+
+.bottom-title {
+    font-size: 25px;
+    flex-grow: 2;
+    padding: 30px;
+    letter-spacing: 20px;
+}
+
+.footer-title {
+    letter-spacing: 10px;
+}
+
+.about {
+    flex-grow: 2;
+    padding: 30px;
+}
+
+.bottom a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.bottom a:hover {
+    color: #C0A06A;
+}
+
+.contact {
+    flex-grow: 4;
+    padding: 30px;
+}
